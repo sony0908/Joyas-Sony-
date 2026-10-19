@@ -231,14 +231,9 @@
     position:relative;
   }
   .hero-visual img{
-    width:100%; aspect-ratio:4/5; object-fit:cover;
+    width:100%; aspect-ratio:16/10; max-height:360px; object-fit:cover;
   }
-  .hero-tag{
-    position:absolute; bottom:-18px; left:-18px;
-    background:var(--wine); color:#fff;
-    padding:9px 18px; font-family:'Playfair Display', serif; font-style:italic; font-size:1.35rem; font-weight:700;
-    transform:rotate(-3deg);
-  }
+  
 
   /* ---------- Nosotros ---------- */
   .about{
@@ -363,7 +358,7 @@
     nav ul{display:none;}
     .menu-toggle{display:block;}
     .hero{grid-template-columns:1fr; padding-top:40px;}
-    .hero-visual{order:-1; max-width:340px;}
+    .hero-content{order:1; text-align:center;} .hero-visual{order:2; max-width:420px; width:100%; margin:24px auto 0;} .hero-visual img{aspect-ratio:16/9; max-height:220px; border-radius:4px;}
     .about{grid-template-columns:1fr;}
     .grid{grid-template-columns:repeat(2, minmax(0,1fr));}
     .footer-grid{grid-template-columns:1fr; gap:28px;}
@@ -483,7 +478,7 @@
     <div class="logo-mark">
       <a href="#inicio" onclick="showHome(event)" aria-label="Joyas Sony - Inicio">
         <span class="logo-name">Joyas Sony</span>
-        <span class="logo-sub">Hecho a mano</span>
+        <span class="logo-sub">Plata & Cristales</span>
       </a>
     </div>
     <nav class="desktop-nav">
@@ -507,18 +502,18 @@
       <li><a href="#contacto" onclick="toggleMobileMenu(false);">Contacto</a></li>
     </ul>
     <div class="mobile-menu-footer">
-      <a href="https://wa.me/56986807766" target="_blank" rel="noopener">
-        <span>💬 Pedidos WhatsApp: +56 9 8680 7766</span>
+      <a href="https://wa.me/56965723331" target="_blank" rel="noopener">
+        <span>💬 Pedidos WhatsApp: +56 9 6572 3331</span>
       </a>
     </div>
   </div>
 </header>
 
 <section class="hero wrap" id="hero">
-  <div>
-    <span class="hero-eyebrow">Hecho a mano, hilo a hilo</span>
-    <h1>Aros moldeados a mano<br>en <em class="hand" style="font-size:1em; color:var(--wine);">alambre de plata</em></h1>
-    <p>Cada par nace de un solo hilo doblado a mano, con piedras y cristales elegidos uno por uno. Piezas únicas para quienes prefieren lo hecho con tiempo, no en serie.</p>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Diseños Exclusivos</span>
+    <h1>Aros en plata y cristales<br>con <em class="hand" style="font-size:1em; color:var(--wine);">estilo único</em></h1>
+    <p>Piezas elegantes pensadas para complementar tu día a día o momentos especiales. Elige tu modelo favorito y coordina tu pedido fácilmente por WhatsApp.</p>
     <div class="hero-ctas">
       <a href="#catalogo" class="btn btn-catalog-cta" onclick="openCatalog(event)">Ver catálogo</a>
       <a href="#nosotros" class="btn-secondary-link" onclick="showHome(event)">Nuestra historia</a>
@@ -526,9 +521,8 @@
   </div>
   <div class="hero-visual reveal">
     <div class="frame">
-      <img src="assets/hero-aro-estrella.jpeg" alt="Aro Estrella hecho a mano en alambre de plata" width="600" height="750">
+      <img src="assets/hero-aro-estrella.jpeg" alt="Aro Estrella de plata y cristales" width="600" height="400">
     </div>
-    <div class="hero-tag">100% artesanal</div>
   </div>
 </section>
 
@@ -543,8 +537,8 @@
     <a href="#" class="back-home-link" onclick="showHome(event)">← Volver al inicio</a>
     <div class="section-head">
       <span class="about-label">Catálogo</span>
-      <h2>Elige tu par</h2>
-      <p>Cada diseño nace de un solo alambre de plata, doblado a mano con pinzas hasta tomar su forma.</p>
+      <h2>Nuestra Colección</h2>
+      <p>Elige tu modelo favorito y solicítalo directamente por WhatsApp.</p>
     </div>
     <div class="grid" id="productGrid">
       <div class="card" data-pid="estrella">
@@ -552,7 +546,7 @@
         <div class="card-body">
           <h3>Aro Estrella</h3>
           <span class="price">$6.000</span>
-          <a class="add-btn static-order" href="https://wa.me/56986807766?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Estrella%20%28%246.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="add-btn static-order" href="https://wa.me/56965723331?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Estrella%20%28%246.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </div>
       <div class="card" data-pid="luna">
@@ -560,7 +554,7 @@
         <div class="card-body">
           <h3>Aro Luna con Piedras Negras</h3>
           <span class="price">$6.000</span>
-          <a class="add-btn static-order" href="https://wa.me/56986807766?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Luna%20con%20Piedras%20Negras%20%28%246.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="add-btn static-order" href="https://wa.me/56965723331?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Luna%20con%20Piedras%20Negras%20%28%246.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </div>
       <div class="card" data-pid="azul">
@@ -568,7 +562,7 @@
         <div class="card-body">
           <h3>Aro Piedra Azul</h3>
           <span class="price">$4.000</span>
-          <a class="add-btn static-order" href="https://wa.me/56986807766?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Piedra%20Azul%20%28%244.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="add-btn static-order" href="https://wa.me/56965723331?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Piedra%20Azul%20%28%244.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </div>
       <div class="card" data-pid="rosa">
@@ -576,7 +570,7 @@
         <div class="card-body">
           <h3>Aro Piedra Rosa</h3>
           <span class="price">$4.000</span>
-          <a class="add-btn static-order" href="https://wa.me/56986807766?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Piedra%20Rosa%20%28%244.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="add-btn static-order" href="https://wa.me/56965723331?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Piedra%20Rosa%20%28%244.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </div>
       <div class="card" data-pid="tornasol">
@@ -584,7 +578,7 @@
         <div class="card-body">
           <h3>Aro Espiral Tornasol</h3>
           <span class="price">$4.000</span>
-          <a class="add-btn static-order" href="https://wa.me/56986807766?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Espiral%20Tornasol%20%28%244.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="add-btn static-order" href="https://wa.me/56965723331?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Espiral%20Tornasol%20%28%244.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </div>
       <div class="card" data-pid="cascada">
@@ -592,7 +586,7 @@
         <div class="card-body">
           <h3>Aro Cascada Tricolor</h3>
           <span class="price">$4.000</span>
-          <a class="add-btn static-order" href="https://wa.me/56986807766?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Cascada%20Tricolor%20%28%244.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="add-btn static-order" href="https://wa.me/56965723331?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Cascada%20Tricolor%20%28%244.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </div>
       <div class="card" data-pid="onda-nacar">
@@ -600,7 +594,7 @@
         <div class="card-body">
           <h3>Aro Onda Nácar</h3>
           <span class="price">$4.000</span>
-          <a class="add-btn static-order" href="https://wa.me/56986807766?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Onda%20N%C3%A1car%20%28%244.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="add-btn static-order" href="https://wa.me/56965723331?text=Hola%20Joyas%20Sony%21%20Quiero%20pedir%20el%20Aro%20Onda%20N%C3%A1car%20%28%244.000%29" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </div>
     </div>
@@ -628,7 +622,7 @@
     <div class="footer-grid">
       <div>
         <h3>Joyas Sony</h3>
-        <p>Aros de alambre de plata hechos a mano, uno por uno. Piezas artesanales con piedras y cristales naturales.</p>
+        <p>Joyas y aros de plata con piedras y cristales seleccionados. Envíos y atención personalizada.</p>
       </div>
       <div>
         <h4>Navegación</h4>
@@ -640,18 +634,18 @@
       <div>
         <h4>Contacto</h4>
         <ul>
-          <li><a href="https://wa.me/56986807766" target="_blank" rel="noopener">WhatsApp +56 9 8680 7766</a></li>
+          <li><a href="https://wa.me/56965723331" target="_blank" rel="noopener">WhatsApp +56 9 6572 3331</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom wrap">
       <span>© 2026 Joyas Sony — Todos los derechos reservados</span>
-      <span>Hecho con cariño, alambre y paciencia</span>
+      <span>Diseño con dedicación y estilo</span>
     </div>
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/56986807766?text=Hola%20Joyas%20Sony!%20Quiero%20consultar%20por%20sus%20aros" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+<a class="wa-float" href="https://wa.me/56965723331?text=Hola%20Joyas%20Sony!%20Quiero%20consultar%20por%20sus%20aros" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
   <svg width="30" height="30" viewBox="0 0 16 16" fill="currentColor"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.588-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.246c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.337-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
 </a>
 
@@ -745,7 +739,7 @@
     }
   ];
 
-  const WHATSAPP_NUMBER = '56986807766';
+  const WHATSAPP_NUMBER = '56965723331';
   const STORAGE_KEY = 'joyas_sony_cart_v1';
 
   // Persistencia de Carrito en LocalStorage
